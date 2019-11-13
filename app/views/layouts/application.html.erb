@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>student management</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+    <header class = "header">
+      <div class = "title">student management</div>
+      <div class = "login_btn">ログイン</div>
+      <div class = "new_btn">新規</div>
+    
+    </header>
+    <%= yield %>
+    <footer class = footer>japan.2020</footer>
+  </body>
+</html>
