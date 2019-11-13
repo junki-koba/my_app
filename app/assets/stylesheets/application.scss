@@ -19,6 +19,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
   .title{
     font-size: 50px;
     font-style: oblique;
@@ -35,8 +36,8 @@
     font-style: oblique;
   }
   .footer{
-    margin-bottom: 0;
+    // margin:auto;
     text-align: center;
   }
-}
+
  
