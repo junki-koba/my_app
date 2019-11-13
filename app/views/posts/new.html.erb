@@ -1,0 +1,8 @@
+<%= form_with model: @post, class: :form, local: true do |form| %>
+<div class = "box">
+  <%= form.text_field :score, placeholder: :得点, class: :score %>
+  <%= form.text_area :subject, placeholder: :科目, class: :subject %>
+  <%= form.submit '投稿する', class: :form__btn %>
+</div>
+<% end %>
+

@@ -1,0 +1,21 @@
+.box{
+  display: flex;
+  margin: auto;
+}
+.score{
+  width: 30%;
+  height: 110px;
+  border: 5px solid #aaa;
+  // text-align: center;
+}
+.subject{
+  border: 5px solid #aaa;
+  width: 30%;
+  height: 110px;
+  border-radius: 5px;
+}
+.form__btn{
+  font-size: 110px;
+  width: 100px;
+  height: 100px;
+}
