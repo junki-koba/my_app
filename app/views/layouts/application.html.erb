@@ -11,11 +11,21 @@
   <body>
     <header class = "header">
       <div class = "title">student management</div>
-      <div class = "login_btn">ログイン</div>
-      <div class = "new_btn">新規</div>
-    
+      <% if user_signed_in? %>
+        <div class="user_nav grid-6">
+          <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+          <%= link_to  "投稿する", "/posts/new", class: "post" %>
+        </div>
+      <% else %>
+        <div class = "login_btn">
+        <%= link_to "ログイン", new_user_session_path%></div>
+        <div class = "new_btn">
+        <%= link_to "新規", new_user_registration_path%></div>
+      <% end %>
     </header>
     <%= yield %>
+    <div class = "btn">
+    <%= link_to "home" ,root_path,method: :get%></div>
   </body>
   <footer class = "footer">japan.2020</footer>
 </html>
