@@ -1,10 +1,9 @@
 <div class = "posts">
   <div class = "into">
     <% @posts.each do |post| %>
-      <p><%= post.score%></p>
-      <span class="name">
-        <%= post.subject %>
-      </span>
+      <p><%= post.score%>
+        <span class="name"><%= post.subject %></span>
+      </p>
     </div>
   <% end %>
   </div>
