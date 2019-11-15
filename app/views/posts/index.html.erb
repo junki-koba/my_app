@@ -3,6 +3,7 @@
     <% @posts.each do |post| %>
       <p><%= post.score%>
         <span class="name"><%= post.subject %></span>
+        <%# <%= link_to "削除", post_path(@post.ids), method: :delete, class: "postManage__delete" %> 
       </p>
     </div>
   <% end %>

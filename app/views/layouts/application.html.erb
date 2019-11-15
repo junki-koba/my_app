@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
     <title>student management</title>
+    <meta charset="utf-8">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -28,4 +29,13 @@
     <%= link_to "home" ,root_path,method: :get%></div>
   </body>
   <footer class = "footer">japan.2020</footer>
+  <h1 id="time"></h1>
+  <script>
+    time();
+    function time(){
+        var now = new Date();
+        document.getElementById("time").innerHTML = now.toLocaleString();
+    }
+    setInterval('time()',1000);
+  </script>
 </html>
