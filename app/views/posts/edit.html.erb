@@ -1,0 +1,13 @@
+<div class="contents row">
+  <div class="container">
+    <%= form_with(model: @post, local: true) do |form| %>
+      <h3>
+        編集する
+      </h3>
+      <%# <%= form.text_field :name, placeholder: "Nickname" %>  # この7行目を削除 %>
+      <%= form.text_field :score, placeholder: :得点, class: :score %>
+      <%= form.text_area :subject, placeholder: :科目, class: :subject %>
+      <%= form.submit '投稿する', class: :form__btn %>
+    <% end %>
+  </div>
+</div>

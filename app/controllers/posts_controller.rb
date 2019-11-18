@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :move_to_index, except: [:index, ]
+  before_action :move_to_index, except: [:index]
   def index
     @posts = Post.all.order("created_at DESC")
   end
@@ -8,6 +8,13 @@ class PostsController < ApplicationController
   end
   def create
     Post.create(post_params)
+  end
+  def edit
+    
+  end
+  def destroy
+    post = Post.find(params[:id])
+    post.destroy
   end
   private
   def post_params
